@@ -1,0 +1,5 @@
+About Us
+
+Team Nautilus comprises of 9 undergraduate engineering majors from Temecula, Ca. participating in the International (AUVSI) RoboSub Competition for the second consecutive year. The objective of the competition is to design, manufacture, and program a completely autonomous robotic submarine that will face obstacles in an underwater environment. Formerly known as Gears2Robots; the team designs, builds, and programs the Autonomous Underwater Vehicle (AUV) from the ground up. This engineering team is divided into subgroups consisting of electrical, mechanical, and software. The combination of the subgroups allows an even distribution of platforms required for the development of the submarine. The competition is held at the SSC Pacific Transdec in San Diego, Ca from July 28-August 3.
+
+<img src="./images/about.jpg"/>
