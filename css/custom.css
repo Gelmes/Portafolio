@@ -1,16 +1,42 @@
+h6{
+  color:lightgray;
+  font-style:italic;
+}
+
+.container img{
+  width:100%;
+}
 .title-text{
+    display: flex;
+    /*float: right;*/
+    font-size: 24;
+    color: #FFFFFF;
+    text-shadow: -1px -1px 3px #000000;
+    bottom: 0px;
+    height:100%;
+    padding: 0px 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    background: rgba(30,30,30,0.5);
+    /*border-bottom-left-radius: 10px;*/
+}
+
+/*
+.title-text:hover, .title-text:active{
     display: flex;
     float: right;
     font-size: 24;
     color: #FFFFFF;
     text-shadow: -1px -1px 3px #000000;
     bottom: 0px;
+    height:initial;
     padding: 0px 20px;
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     background: rgba(30,30,30,0.7);
     border-bottom-left-radius: 10px;
 }
+*/
 
 .filter{
 }

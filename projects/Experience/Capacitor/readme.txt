@@ -1,3 +1,10 @@
+
+|   | Last Updated 1/4/2017 |
+|-------------|------------:|
+#### Capacitor Project
+###### by Marco Rubio
+
+
 During some free time I had I decided to build a giant capacitor from scratch in an attempt to build a large energy bank for an alternative energy source that I could use to power miscallanious projects in the future. The capacitor project was really fun and I must revisit this project again in the future since I did not get the results I wanted. 
 
 For this project I used wax paper and aluminum. I went to the closests dollar store and bough two rolls of wax paper and one roll of thin aluminum paper.

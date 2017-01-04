@@ -14,7 +14,7 @@
 <body>
   <nav class="white pinned" style="z-index: 1;" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Projects</a>
+      <a id="logo-container" href="projects.php" class="brand-logo">Projects</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="index.php">Home</a></li>
         <li><a href="projects.php">Projects</a></li>

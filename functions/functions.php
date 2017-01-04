@@ -84,8 +84,9 @@ function get_projects($address, $counter=0){
 			echo '">';
 			echo '<div id="coloumn-'.$counter.
 						'" class="parallax-bg" style="background-image: url('.
-						"'".$address.'/'.$folder.'/thumb.jpg'."'".
-						'); opacity: 0; z-index: -1;"><div class="title-text">'.
+						"'".$address.'/'.$folder.'/thumb.jpg'."'";
+			echo	'); z-index: -1;"><div class="title-text">'.
+			//echo	'); opacity: 0; z-index: -1;"><div class="title-text">'.
 						$folder.'</div>';
 			echo "</div></a></div>";
 		}

@@ -2029,7 +2029,7 @@ $(document).ready(function(){
         }
         else {
           // Insert as text;
-          toast.innerHTML = html; 
+          toast.innerHTML = html;
         }
         // Bind hammer
         var hammerHandler = new Hammer(toast, {prevent_default: false});
@@ -2241,7 +2241,9 @@ $(document).ready(function(){
               overlay.css('opacity', 0).click( function(){
                 removeMenu();
               });
-              $('body').append(overlay);
+              //$('body').append(overlay);
+              $('nav').prepend(overlay);
+              //$('body').insertBefore(overlay, $('body').firstChild);
             }
 
             // Keep within boundaries
@@ -2398,7 +2400,9 @@ $(document).ready(function(){
                   } });
 
               });
-              $('body').append(overlay);
+              //$('body').append(overlay);
+              $('nav').prepend(overlay);
+              //$('body').insertBefore(overlay, $('body').firstChild);
               overlay.velocity({opacity: 1}, {duration: 300, queue: false, easing: 'easeOutQuad',
                 complete: function () {
                   menuOut = true;
