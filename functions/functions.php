@@ -100,17 +100,17 @@ function get_projects($address, $counter=0){
 *   the content based on the folder structure.
 *	this function will only go 2 folders deep
 **********************************************************************/
-function get_all_projects_divided(){
+function get_all_projects_divided($addr){
 
 	$id = 0;
-    $folders =  scandir("projects");
+    $folders =  scandir($addr);
 	foreach($folders as $folder){
 		if(!($folder == "." || $folder == "..")){
 
 			echo '<div class="row card">';
 			echo '<div class="card-content">';
 			echo "<h4>".$folder."</h4>";
-			$id = get_projects("projects/".$folder, $id);
+			$id = get_projects($addr."/".$folder, $id);
 			echo '</div></div>';
 		}
 	}

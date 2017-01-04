@@ -8,10 +8,6 @@
         <div class="row center">
           <h5 class="header col s12 light">All I know is that I know nothing, and bacause of this I Know that I know something.</h5>
         </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light purple lighten-1">Get Started</a>
-        </div>
-        <br><br>
 
       </div>
     </div>
