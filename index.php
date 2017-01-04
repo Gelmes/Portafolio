@@ -1,4 +1,4 @@
-<?php include("header.php"); ?>
+<?php include("/pages/header.php"); ?>
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
@@ -11,7 +11,7 @@
 
       </div>
     </div>
-    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="/pages/img/bg1.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
 
@@ -60,7 +60,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="/pages/img/bg2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
@@ -86,7 +86,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="/pages/img/bg3.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
-  <?php include("footer.php"); ?>
+  <?php include("/pages/footer.php"); ?>

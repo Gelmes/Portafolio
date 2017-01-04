@@ -1,3 +1,0 @@
-function theGame(){
-	alert("Hello");
-}
