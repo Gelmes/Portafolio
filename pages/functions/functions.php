@@ -1,7 +1,7 @@
 <?php
 
-include("parsedown/Parsedown.php");
-include("parsedown/ParsedownExtra.php");
+include("Parsedown.php");
+include("ParsedownExtra.php");
 
 /*********************************************************************
 *	Gets the content of the given file
