@@ -5,7 +5,7 @@
     <div class="section">
 
       <!--   Icon Section   -->
-      <?php get_all_projects_divided("../projects"); ?>
+      <?php get_all_projects_divided("../projects", 0, 0); ?>
 
 
     </div>
