@@ -1,6 +1,5 @@
 <?php
 include("header.php");
-include("functions/functions.php");
 ?>
 
   <div class="container">

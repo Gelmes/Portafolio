@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<?php include("functions/functions.php"); ?>
+
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -17,16 +20,13 @@
       <a id="logo-container" href="projects.php" class="brand-logo">Projects</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="/index.php">Home</a></li>
-        <li><a href="/pages/projects.php">Projects</a></li>
-        <li><a href="#">Philosophy</a></li>
-        <li><a href="#">Art</a></li>
+        <?php get_pages(); ?>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
         <li><a href="/index.php">Home</a></li>
-        <li><a href="/pages/projects.php">Projects</a></li>
-        <li><a href="#">Philosophy</a></li>
-        <li><a href="#">Art</a></li>
+        <?php get_pages(); ?>
+
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>

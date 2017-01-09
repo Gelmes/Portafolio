@@ -33,11 +33,13 @@ $( document ).ready(function() {
 		*/
 
 		$(".parallax-bg").hover(function(){
-    $(this).children().css("float", "none");
-    $(this).css("border", "#222222 solid 3px");
+    //$(this).children().css("float", "none");
+    $(this).children(".selection").fadeIn("slow");
+    //$(this).css("border", "#222222 solid 3px");
     }, function(){
-    $(this).children().css("float", "right");
-    $(this).css("border", "none");
+    //$(this).children().css("float", "right");
+    $(this).children(".selection").fadeOut("slow");
+    //$(this).css("border", "none");
 		});
 
 		$('.carousel.carousel-slider').carousel({full_width: true});

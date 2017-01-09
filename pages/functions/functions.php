@@ -71,10 +71,10 @@ $folders =  scandir("team");
 *   title and uses an image titled
 *   thumb.jpg as the thumbnail
 **********************************************************************/
-function get_projects($address, $counter=0){
+function get_projects($address, $divided=1, $counter=0){
 
-    $folders =  scandir($address);
-
+  $folders =  scandir($address);
+  if($divided == 1) echo "<div class='row'>";
 	foreach($folders as $folder){
 		if(!($folder == "." || $folder == "..")){
 			$counter++; //Incremented each time ti give each element a unique ID
@@ -88,9 +88,11 @@ function get_projects($address, $counter=0){
 			echo	'); z-index: -1;"><div class="title-text">'.
 			//echo	'); opacity: 0; z-index: -1;"><div class="title-text">'.
 						$folder.'</div>';
+		  echo "<div class='selection'></div>";
 			echo "</div></a></div>";
 		}
 	}
+  if($divided == 1) echo "</div>";
 	return $counter;
 }
 
@@ -101,32 +103,47 @@ function get_projects($address, $counter=0){
 *	this function will only go 2 folders deep
 **********************************************************************/
 function get_all_projects_divided($addr, $border, $title){
-
 	$id = 0;
   $folders =  scandir($addr);
 
-	if($border == 0){
-		echo "<div class='row'>";
-	}
+	if($border == 0) echo "<div class='row'>";
 	foreach($folders as $folder){
 		if(!($folder == "." || $folder == "..")){
 			if($border == 1){
 				echo '<div class="row card">';
 				echo '<div class="card-content">';
 			}
-			if($title == 1){
-				echo "<h4>".$folder."</h4>";
-			}
+			if($title == 1) echo "<h4>".$folder."</h4>";
 			$id = get_projects($addr."/".$folder, $id);
-			if($border == 1){
-				echo '</div></div>';
+			if($border == 1) echo '</div></div>';
+		}
+	}
+
+	if($border == 0) echo "<div>";
+}
+
+/*********************************************************************
+*	Generates HTML for the Nav menu along with their links
+**********************************************************************/
+function get_pages(){
+	$id = 0;
+	if(is_dir('../contents')){
+  	$folders =  scandir('../contents');
+		foreach($folders as $folder){
+			if(!($folder == "." || $folder == "..")){
+				echo "<li><a href='./projects.php?dir=../contents/".$folder."'>".$folder."</a></li>";
+			}
+		}
+	}
+	else{
+  	$folders =  scandir('contents');
+		foreach($folders as $folder){
+			if(!($folder == "." || $folder == "..")){
+				echo "<li><a href='./pages/projects.php?dir=../contents/".$folder."'>".$folder."</a></li>";
 			}
 		}
 	}
 
-	if($border == 0){
-		echo "<div>";
-	}
 }
 
 /*********************************************************************
