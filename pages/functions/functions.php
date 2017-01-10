@@ -76,20 +76,22 @@ function get_projects($address, $divided=1, $counter=0){
   $folders =  scandir($address);
   if($divided == 1) echo "<div class='row'>";
 	foreach($folders as $folder){
-		if(!($folder == "." || $folder == "..")){
-			$counter++; //Incremented each time ti give each element a unique ID
-			echo '<div class="col s12 m4 filter">';
-			echo '<a href="./content.php?prj=';
-			echo $address.'/'.$folder;
-			echo '">';
-			echo '<div id="coloumn-'.$counter.
-						'" class="parallax-bg" style="background-image: url('.
-						"'".$address.'/'.$folder.'/thumb.jpg'."'";
-			echo	'); z-index: -1;"><div class="title-text">'.
-			//echo	'); opacity: 0; z-index: -1;"><div class="title-text">'.
-						$folder.'</div>';
-		  echo "<div class='selection'></div>";
-			echo "</div></a></div>";
+		if(!($folder == "." || $folder == "..") && is_dir($address.'/'.$folder)){
+			if(file_exists($address.'/'.$folder.'/thumb.jpg')){
+				$counter++; //Incremented each time to give each element a unique ID
+				echo '<div class="col s12 m4 filter">';
+				echo '<a href="./content.php?dir=';
+				echo $address.'/'.$folder;
+				echo '">';
+				echo '<div id="coloumn-'.$counter.
+							'" class="parallax-bg" style="background-image: url('.
+							"'".$address.'/'.$folder.'/thumb.jpg'."'";
+				echo	'); z-index: -1;"><div class="title-text">'.
+				//echo	'); opacity: 0; z-index: -1;"><div class="title-text">'.
+							$folder.'</div>';
+			  echo "<div class='selection'></div>";
+				echo "</div></a></div>";
+			}
 		}
 	}
   if($divided == 1) echo "</div>";
@@ -131,7 +133,7 @@ function get_pages(){
   	$folders =  scandir('../contents');
 		foreach($folders as $folder){
 			if(!($folder == "." || $folder == "..")){
-				echo "<li><a href='./projects.php?dir=../contents/".$folder."'>".$folder."</a></li>";
+				echo "<li><a href='./content.php?dir=../contents/".$folder."'>".$folder."</a></li>";
 			}
 		}
 	}
@@ -139,7 +141,7 @@ function get_pages(){
   	$folders =  scandir('contents');
 		foreach($folders as $folder){
 			if(!($folder == "." || $folder == "..")){
-				echo "<li><a href='./pages/projects.php?dir=../contents/".$folder."'>".$folder."</a></li>";
+				echo "<li><a href='./pages/content.php?dir=../contents/".$folder."'>".$folder."</a></li>";
 			}
 		}
 	}
@@ -167,28 +169,18 @@ function get_all_projects(){
 	}
 	echo '</div>';
 }
-/*
-<div class="carousel">
-	 <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/250/250/nature/1"></a>
-	 <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/250/250/nature/2"></a>
-	 <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/250/250/nature/3"></a>
-	 <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/250/250/nature/4"></a>
-	 <a class="carousel-item" href="#five!"><img src="http://lorempixel.com/250/250/nature/5"></a>
- </div>
- */
 
 /*********************************************************************
 *	Generates an image courasel using all the files in
 * the provided directory
 **********************************************************************/
-function gen_carousel($addr){
-
+function get_carousel($addr){
 	  $folders =  scandir($addr);
 		echo "<div class='carousel carousel-slider'>";
 		$counter = 0;
 		foreach($folders as $file){
 			if(!($file == "." || $file == "..")){
-				 if(preg_match("#(gif|png|jpg)#i", $file)){
+				 if(preg_match("#img[0-9]+.(gif|png|jpg)#i", $file)){
 					 $counter++;
 					 echo "<a class='carousel-item' href='#".$counter."!'><img src='";
 					 echo $addr."/".$file."'></a>";
@@ -201,23 +193,15 @@ function gen_carousel($addr){
 /*********************************************************************
 *	Gets the content relavant to a single project
 **********************************************************************/
-function get_content($addr){
-	$Parsedown = new ParsedownExtra();
+function get_content($addr,$filename="readme.txt"){
 	$location = htmlspecialchars($addr, ENT_QUOTES);
-	if(!file_exists($location."/readme.txt")){
-		gen_carousel($location);
-		//echo "<img src='".$location."/thumb.jpg' width='100%'>";
-	}
-	else{
-		$file = fopen($location."/readme.txt", "r");
+	if(file_exists($location."/".$filename)){
+		$Parsedown = new ParsedownExtra();
+		$file = fopen($location."/".$filename, "r");
 		$string = "";
-		while(! feof($file))
-		{
-			$string .= fgets($file);
-		}
+		while(! feof($file))	$string .= fgets($file);
 		fclose($file);
 		echo $Parsedown->text($string);
-		echo "<div>";
 	}
 }
 
