@@ -4,12 +4,18 @@ The end goal of this project is to create an easy to use website that can dynami
 ##End Goals
 - Create a template page for users to model after
 - Create admin page
-- Dynamic page creation
-- Support for text thumbnails
-- Carousel option in Markdown (Maybe)
-- Tile Galley Option in Markdown (Maybe)
+- Dynamic page creation (Done)
+- Support for text thumbnails (nahh)
+- Carousel option in Markdown (Switched to image title)
+- Tile Galley Option in Markdown (Switched it to a top.txt)
+- Readme.md user guide
 
-##Current Status
+##Status 1/10/2017
+- Change Logo
+- Fix Carousel bug
+- Add personal content
+
+##Status 1/6/2017
 - Using this project to develop personal portfolio
 - Content is not what will be in final template
 - All End Goals need to be worked on
