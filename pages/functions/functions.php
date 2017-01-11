@@ -176,7 +176,7 @@ function get_all_projects(){
 **********************************************************************/
 function get_carousel($addr){
 	  $folders =  scandir($addr);
-		echo "<div class='carousel carousel-slider'>";
+		echo '<div class="carousel carousel-slider" data-indicators="true">';
 		$counter = 0;
 		foreach($folders as $file){
 			if(!($file == "." || $file == "..")){
