@@ -1,0 +1,5 @@
+Options All
+AuthType "Basic"
+AuthName "Protected Access"
+AuthUserFile /home/pdrmedia/public_html/themansmeds/admin/.htpasswd
+require valid-user

@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vertex Technology</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300,600,800' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/JavaScript" src="js/cloud-carousel.1.0.5.js"></script>
+<script type="text/JavaScript" src="js/cloud-carousel.1.0.5.min.js"></script>
+</head>
+
+    
+    
+<script>
+$(document).ready(function(){
+						   
+	// This initialises carousels on the container elements specified, in this case, carousel1.
+	$("#carousel1").CloudCarousel(		
+		{			
+			xPos: 437,
+			yPos: 50,
+			buttonLeft: $("#left-but"),
+			buttonRight: $("#right-but"),
+			altBox: $("#alt-text"),
+			titleBox: $("#title-text"),
+			minscale: 1,
+			reflHeight: 20,
+			yRadius: -20,
+			bringToFront: true,
+		}
+	);
+});
+ 
+</script>
+        <!-- This is the container for the carousel. -->
+<body>
+
+<div id="wrapper">
+
+    <div id="header">
+   	  <div id="header-1"><a href="index.htm">HOME</a></div>
+        <div id="header-2"><a href="services.htm">SERVICES</a></div>
+        <div id="header-3"><a href="clients.htm">CLIENTS</a></div>
+    <div id="header-4"><a href="aboutus.htm">ABOUT US</a></div>
+<div id="header-5"><a href="contactus.htm">CONTACT US</a></div>
+  <div id="logo"><a href="index.htm"><img src="images/logo.png" /></a></div>
+        <div id="phone"><font size="4">Office:</font> 949-236-4570</div>
+        <div id="fax"><font size="4">Fax:</font> 949-743 0794</div>
+      <div id="tagline">"Offering new Ideas and solutions"</div>
+    </div>
+    <div id="content-top">
+    <div id="slider">
+            <div id = "carousel1" style="width:874px; height:333px;overflow:scroll;">            
+            <!-- All images with class of "cloudcarousel" will be turned into carousel items -->
+            <!-- You can place links around these images -->
+            <img class = "cloudcarousel" src="images/picture-5.png" width="375" height="250" />
+            <img class = "cloudcarousel" src="images/picture-1.png" width="375" height="250"/>
+            <img class = "cloudcarousel" src="images/picture-2.png" width="375" height="250"/>
+            <img class = "cloudcarousel" src="images/picture-3.png" width="375" height="250" />
+            <img class = "cloudcarousel" src="images/picture-4.png" width="375" height="250" />
+        </div></div>
+        <div id="buttons">
+        <!-- Define left and right buttons. -->
+        <!--
+		<input id="left-but"  type="button" value="Left" />
+        <input id="right-but" type="button" value="Right" />
+        <div id="left-but">LEFT NIGGA<br/></div><br/>
+        <div id="right-but">RIGHT BLAH!</div>
+        -->
+        
+        <!-- Define elements to accept the alt and title text from the images. -->
+        <p id="title-text"></p>
+        <p id="alt-text"></p>
+        </div>
+    
+</div>
+    <div id="content-bottom">
+    	<div id="left-text">
+        <h1> Welcome to Vertex </h1>
+        <h2> Vertex is a premier IT Consulting firm in the nation. We provide a wide array of solutions customized for a range of key verticals and horizontals. Backed by exceptional technology expertise of our consultants, Vertex has been successful in meeting our client expectations.</h2>
+        </div>
+        <div id="right-text"><center><img src="images/building-1.jpg" align="center" /></center>
+</div>
+    </div>
+  	<div id="footer">
+    <div id="address">19800 MacArthur Blvd, Suite 300, Irvine, CA 92612</div>
+    <div id="copyright-text">Copyright © 2012. All rights reserved |   Site   created by <a href="http://www.pdrmediaonline.com/">PDR Media</a></div>
+
+   	</div>
+
+</div>
+
+</body>
+</html>

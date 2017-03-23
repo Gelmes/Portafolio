@@ -1,0 +1,519 @@
+/*Fonts*************************************************************/
+@font-face {
+ font-family: "calibri";
+ src: url('../fonts/calibri.ttf');
+}
+/*Styles************************************************************/
+h1 {
+	margin-top:0;
+	margin-bottom:0;
+	padding: 0px;
+	color: #656762;
+}
+h2 {
+	font-family:calibri;
+	font-size: 26px;
+	line-height: 26px;
+	color: #FFF;
+	margin: 0px;
+	padding: 0px;
+}
+h3 {
+	color: #656762;
+	font-size: 20px;
+	line-height: 20px;
+	margin: 0px;
+	padding: 0px;
+}
+h4 {
+	font-family:calibri;
+	font-size: 24px;
+	line-height: 24px;
+	color: #FFF;
+	margin: 0px;
+	padding: 0px;
+}
+p {
+}
+A:link {
+	text-decoration:none;
+	color:#FFF;
+}
+A:visited {
+	text-decoration: none;
+	color:#FFF;
+}
+A:active {
+	text-decoration: none;
+	color:#F90;
+}
+A:hover {
+	text-decoration: underline;
+	color:#F90;
+}
+.menu {
+	font-size: 16px;
+	line-height: 16px;
+}
+.pdr {
+	color: #00F;
+}
+.headers {
+	font-family:calibri;
+	font-size: 32px;
+	line-height: 32px;
+	color: #FFF;
+}
+.low-headers {
+	font-family:calibri;
+	color: #666962;
+	font-size: 28px;
+	line-height: 28px;
+	margin: 0px;
+	padding: 0px;
+}
+p.style1 {
+	font-size:12px;
+	color: #666;
+	line-height: 14px;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+p.style2 {
+	font-size:12px;
+	color: #666;
+	line-height: 14px;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+b.style1 {
+	color: #3366CC;
+	font-weight:600;
+}
+.img {
+}
+b {
+}
+
+
+
+/*Top Stufff********************************************************/
+body {
+	padding: 0;
+	text-align:left;
+	margin: 0 auto;
+	background-position: center top;
+	background-image:url(../images/bg.png);
+	font-size:14px;
+	font-family: 'Open Sans', sans-serif;
+	background-repeat:repeat-x;
+ background-color:;
+	background-color: #DDD;
+}
+#wrapper {
+	margin:0 auto;
+	position:relative;
+	width:950px;
+}
+
+
+
+/*Header Stuff*********************************************************/
+#header {
+	position:relative;
+	background-image:url(../images/header.png);
+	width:990px;
+	height:157px;
+}
+#logo {
+	position:absolute;
+	left: 91px;
+	top: 24px;
+}
+#phone {
+	position:absolute;
+	left: 628px;
+	top: 19px;
+}
+#menu {
+	position:absolute;
+	left: 547px;
+	top: 101px;
+	width: 394px;
+	height: 51px;
+}
+#nav-menu ul {
+	position:absolute;
+	height:30px;
+	width:392px;
+	list-style:none;
+	padding:0;
+	margin:0;
+	top: 12px;
+	left: 12px;
+}
+#nav-menu ul li {
+	display:inline;
+	height:30px;
+	width:300px;
+	list-style:none;
+	margin-left:15px;
+}
+#address{
+	position:absolute;
+	left: 558px;
+	top: 62px;
+	color: #999;
+	font-size: 16px;
+	line-height: 16px;
+	width: 367px;
+	text-align: right;
+}
+
+
+
+/*Index.php Stuff******************************************************/
+#content {
+	position:relative;
+	background-image:url(../images/content.png);
+	width:990px;
+	height:970px;
+}
+/*****Top*****/
+#top {
+	position:absolute;
+}
+/*****Mid*****/
+#mid {
+	position:absolute;
+	left: 0px;
+	top: 333px;
+	width: 991px;
+	height: 278px;
+}
+#header-1 {
+	position:absolute;
+	left: 74px;
+	top: 7px;
+	width: 230px;
+	height: 40px;
+}
+#header-2 {
+	position:absolute;
+	left: 307px;
+	top: 7px;
+	width: 197px;
+	height: 32px;
+}
+#header-3 {
+	position:absolute;
+	left: 508px;
+	top: 7px;
+	width: 236px;
+	height: 42px;
+}
+#header-4 {
+	position:absolute;
+	left: 742px;
+	top: 7px;
+	width: 199px;
+	height: 41px;
+}
+/*****Bottom*****/
+#bottom {
+	position:absolute;
+	width:991px;
+	height:343px;
+	top: 614px;
+}
+#left-block {
+	position:absolute;
+	left: 78px;
+	top: 15px;
+	width: 368px;
+	height: 135px;
+	padding-right: 50px;
+	border-right-width: thin;
+	border-right-style: solid;
+	border-right-color: #656762;
+}
+#right-block {
+	position:absolute;
+	left: 553px;
+	top: 15px;
+	width: 346px;
+	height: 138px;
+}
+#bottom-block {
+	position:absolute;
+	left: 78px;
+	top: 155px;
+	width: 820px;
+}
+
+
+
+/*aboutus.php Stuff******************************************************/
+#content-top{
+	position:relative;
+	width:990px;
+	height:330px;
+	background-image:url(../images/content.png);
+}
+#aboutus{
+	position:absolute;
+	left: 79px;
+	width: 841px;
+	height: 325px;
+}
+
+
+
+/*services.php Stuff******************************************************/
+#services-1{
+	position:absolute;
+	left: 81px;
+	width: 541px;
+	height: 325px;
+}
+#services-2{
+	position:absolute;
+	left: 659px;
+	width: 254px;
+	height: 323px;
+	top: 2px;
+}
+#services-3{
+	position:absolute;
+	left: 79px;
+	width: 841px;
+	height: 325px;
+}
+
+
+
+/*products.php Stuff******************************************************/
+#products-1{
+	position:absolute;
+	left: 79px;
+	width: 594px;
+	height: 58px;
+	top: -4px;
+}
+#products-2{
+	position:absolute;
+	left: 661px;
+	width: 263px;
+	height: 250px;
+	top: 33px;
+}
+#products-3{
+	position:absolute;
+	left: 79px;
+	width: 261px;
+	height: 314px;
+	top: 0px;
+}
+#products-4{
+	position:absolute;
+	left: 349px;
+	width: 564px;
+	height: 288px;
+	top: 57px;
+}
+#products ul {
+	position:absolute;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	top: 56px;
+	width: 535px;
+	left: -9px;
+}
+#products ul li {
+	display:inline; 
+	height:30px; 
+	float:left;
+	font-size:19px;
+	font-weight:bold;
+	color:#fff;
+	list-style:none; 
+	margin-left:10px;
+}
+span.shadow-bottom-right {
+	background: url(../images/image-shadow.png) bottom right no-repeat;
+	padding: 0 7px 7px 0;
+	float: left;
+}
+
+span.shadow-bottom-right img {
+	margin: 0 !important;
+	display: block;
+	padding: 8px;
+	background: #ffffff;
+	border: solid 1px #bcbcbc;
+}
+
+
+
+/*contactus.php Stuff******************************************************/
+#form-wrapper{position:absolute;}
+#form-left{
+	position:absolute;
+	left: 96px;
+	top: 34px;
+}
+#form-right{
+	position:absolute;
+	left: 545px;
+	top: 31px;
+}
+#form-bottom{
+	position:absolute;
+	left: 96px;
+	top: 193px;
+}
+#address-2{
+	position:absolute;
+	left: 552px;
+	top: 285px;
+	color: #999;
+	font-size: 16px;
+	line-height: 16px;
+	width: 367px;
+	text-align: right;
+}
+
+
+/*footer.php Stuff******************************************************/
+#footer {
+	position:relative;
+	background-image:url(../images/footer.png);
+	width:990px;
+	height:86px;
+}
+#copy-right {
+	position:absolute;
+	left: 91px;
+	top: 38px;
+	color: #333;
+	font-size: 11px;
+	line-height: 11px;
+}
+#youtube {
+	position:absolute;
+	left: 815px;
+	top: 31px;
+}
+#facebook {
+	position:absolute;
+	left: 886px;
+	top: 31px;
+}
+#twitter {
+	position:absolute;
+	left: 850px;
+	top: 31px;
+}
+
+
+
+/*Slider Stuff******************************************************/
+#slider-wrapper {
+	position:absolute;
+	left: 68px;
+	width: 856px;
+	top: 0px;
+	height: 315px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+#slider ul, #slider li,  #slider2 ul, #slider2 li {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#slider2 {
+	margin-top:1em;
+}
+#slider li, #slider2 li {
+	/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		
+		width:856px;
+	height:315px;
+	overflow:hidden;
+}
+#prevBtn, #nextBtn,  #slider1next, #slider1prev {
+	display:block;
+	width:30px;
+	height:77px;
+	position:absolute;
+	left:-30px;
+	top:71px;
+	z-index:1000;
+}
+#nextBtn, #slider1next {
+	left:856px;
+}
+#prevBtn a, #nextBtn a,  #slider1next a, #slider1prev a {
+	display:block;
+	position:relative;
+	width:30px;
+	height:77px;
+	background:url(../images/btn_prev.gif) no-repeat 0 0;
+}
+#nextBtn a, #slider1next a {
+	background:url(../images/btn_next.gif) no-repeat 0 0;
+}
+/* numeric controls */	
+
+	ol#controls {
+	margin:1em 0;
+	padding:0;
+	height:28px;
+}
+ol#controls li {
+	margin:0 10px 0 0;
+	padding:0;
+	float:left;
+	list-style:none;
+	height:28px;
+	line-height:28px;
+}
+ol#controls li a {
+	float:left;
+	height:28px;
+	line-height:28px;
+	border:1px solid #ccc;
+	background:#DAF3F8;
+	color:#555;
+	padding:0 10px;
+	text-decoration:none;
+}
+ol#controls li.current a {
+	background:#5DC9E1;
+	color:#fff;
+}
+ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus {
+	outline:none;
+}
+/* // Easy Slider */
+
+    /* image replacement */
+        .graphic, #prevBtn, #nextBtn, #slider1prev, #slider1next {
+	margin:0;
+	padding:0;
+	display:block;
+	overflow:hidden;
+	text-indent:-8000px;
+}
+    /* // image replacement */

@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PDR Media</title>
+<meta name="description" content="This is where you place a small peragraph or blurb about the sites contents">
+<meta name="keywords" content="keywords">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/easySlider1.7.js"></script>
+<script type="text/javascript">
+		$(document).ready(function(){	
+			$("#slider").easySlider({
+				auto: true,
+				continuous: true,
+				nextId: "slider1next",
+				prevId: "slider1prev"
+			});
+			$("#slider2").easySlider({ 
+				numeric: true
+			});
+		});	
+	</script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+    <div id="phone">
+      <p class="style2">949-478-5340</p>
+    </div>
+  </div>
+  <div id="content-top">
+    <div id="slider-wrapper">
+      <div id="slider">
+        <ul>
+          <li>
+            <div id="slide1">
+              <div id="picture1"><img src="images/content-top-stuff.png" /></div>
+              <!--<div id="content-block-1">
+                <p class="style1">5 Page Website Special</p>
+              </div>-->
+            </div>
+          </li>
+          <li>Stuff Here 1</li>
+          <li>Stuff Here 2</a></li>
+          <li>Stuff Here 3</li>
+          <li>Stuff Here 4</li>
+        </ul>
+      </div>
+    </div>
+    <div id="content-block-2">
+    <div id="facebook-icon"><a href="http://www.facebook.com" onmouseover="$("#slider").easySlider.setCurrent(3)"><img src="images/facebook-icon.png" /></a></div>
+    <div id="twitter-icon"><a href="http://www.twitter.com"><img src="images/twitter-icon.png" /></a></div>
+    <div id="email-icon"><a href="http://www.hotmail.com"><img src="images/email-icon.png" /></a></div>
+     </div>
+    <div id="content-block-3">
+      <div id="menu1"><a href="#"><p class="style3">Packages</p></a></div>
+      <div id="menu2"><a href="#"><p class="style3">Portfolio</p></a> </div>
+      <div id="menu3"><a href="#"><p class="style3">Products</p></a> </div>
+      <div id="menu4"><a href="#"><p class="style3">About Us</p></a> </div>
+      <div id="menu5"><a href="#"><p class="style3">Contact Us</p></a> </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+</div>
+</body>
+</html>

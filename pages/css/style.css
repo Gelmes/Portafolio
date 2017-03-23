@@ -7,8 +7,10 @@
  */
 
 nav ul a,
+.side-nav a,
 nav .brand-logo {
-  color: #444;
+  color: #ccc;
+  font-weight: 200;
 }
 
 p {

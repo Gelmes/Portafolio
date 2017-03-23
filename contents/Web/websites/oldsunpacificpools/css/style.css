@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	width:100%;
+	height:100%;
+	padding: 0px;
+	text-align:center;
+	margin: 0px auto;
+	font-family: 'Open Sans', sans-serif; 
+	background-image:url(../images/bg.png);
+	background-repeat: repeat-x;
+	background-position: center top;
+	background-color:#b4d2ee;
+}
+#wrapper{
+	width: 1000px;
+	height: 701px;
+	margin: auto;
+	position:relative;
+	
+}
+#header{ width:1000px; height:103px; position:relative;}
+#content-top{
+	width:1000px;
+	height:460px;
+	position:relative;
+	background-image: url(../images/top-content.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#content-mid{}
+#content-bottom{
+	background-repeat:no-repeat;
+	width:1000px;
+	height:94px;
+	position:relative;
+	text-align:left;
+	background-image: url(../images/bottom-content.png);
+	background-position: center top;
+}
+/* #content-bottom{background:url(../images/bottom-content.png);width:950px; height:94px; position:relative;} */
+#bottom-text-1{
+	position:absolute;
+	left: 44px;
+	top: 44px;
+	font-weight: bold;
+	color: #FFF;
+	font-size: 15px;
+	width: 157px;
+}
+#bottom-text-2{
+	position:absolute;
+	left: 44px;
+	top: 61px;
+	color: #FFF;
+	font-size: 15px;
+	width: 207px;
+}
+#logo{
+	position:absolute;
+	top: -3px;
+}
+#phone{
+	position:absolute;
+	left: 695px;
+	top: 12px;
+	color: #069;
+	font-size: 26px;
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+#tagline{
+	position:absolute;
+	color: #FFF;
+	font-size: 28px;
+	font-style: italic;
+	font-weight: bold;
+	left: 43px;
+	top: 12px;
+}
+#footer{ width:1000px; height:44px; position:relative; background:url(../images/footer.png); }
+#footer-text{
+	position:absolute;
+	left: 47px;
+	top: 5px;
+	font-size: 14px;
+	color: #333;
+}
+#license-number{
+	color:#069;
+	position:absolute;
+	left: 737px;
+	top: 57px;
+	width: 254px;
+}
+#content-contacts-1{
+	text-align:left;
+	width:400px;
+	position:absolute;
+	left: 14px;
+	top: 7px;
+}
+#content-contacts-2{
+	text-align:left;
+	width:205px;
+	position:absolute;
+	left: 481px;
+	top: 10px;
+}
+#content-contacts-3{
+	text-align:left;
+	width:460px;
+	position:absolute;
+	left: 13px;
+	top: 215px;
+}
+#form-wrapper{
+	position:relative;
+	text-align:left;
+	width:690px;
+	height:400px;
+}
+#contats-form{position:absolute; 
+text-align:left;
+width:500px;
+height:500px;}
+
+#left-buttom{position:absolute; left:650;}
+#right-button{position:absolute; left:0;}
+
+#scroller{position:absolute;}
+#facebook{
+	position:absolute;
+	top: 14px;
+	left: 922px;
+}
+#twitter{
+	position:absolute;
+	top: 14px;
+	left: 957px;
+}

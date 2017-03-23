@@ -1,0 +1,23 @@
+$sc_main_script_url = "http://www.354hard.com/index.cgi";
+$sc_order_script_url = "http://www.354hard.com/index.cgi";
+$URLofImages = "http://www.354hard.com/images";
+$secure_image_path = "http://www.354hard.com/images";
+$sc_domain_name_for_cookie = "www.354hard.com";
+$sc_path_for_cookie = "/";
+$sc_mysql_server_name = "50.63.244.2";
+$sc_mysql_database_name = "majestic702";
+$sc_mysql_user_name = "majestic702";
+$sc_mysql_password = "Hardon4u";
+$sc_shall_i_email_if_error = "no";
+$sc_shall_i_log_errors = "yes";
+$sc_shall_i_log_accesses = "yes";
+$sc_shall_i_let_client_know_item_added = "yes";
+$body_tag = "<body marginwidth=\"0\" marginheight=\"0\" topmargin=\"0\" bottommargin=\"0\" leftmargin=\"0\" rightmargin=\"0\" bgcolor=\"#FFFFFF\">";
+# Offline or ANet or ms
+$sc_gateway_name = "Offline";
+$rowsper = "3";
+$sc_db_max_rows_returned = "12";
+$sc_money_symbol = "\$";
+$sc_money_symbol_placement = "front";
+$sc_money_format = "%.2f";
+1;

@@ -1,0 +1,481 @@
+/*
+Theme Name: 635
+Theme URI: http://rubiosweb.com
+Description: Testing
+Author: Marco Rubio
+Author URI: http://wordpress.org/
+Version: 1.0
+Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu (optional)
+
+License:
+License URI:
+
+General comments (optional).
+*/
+
+
+
+
+/*Fonts*************************************************************/
+@font-face {
+    font-family: "TrajanPro-Regular";
+    src: url('../fonts/TrajanPro-Regular.otf');
+}
+
+
+
+
+
+/*Styles************************************************************/
+h1 {
+	font-family:TrajanPro-Regular;
+	margin: 0px;
+	padding: 0px;
+}
+h2 {
+	font-family: TrajanPro-Regular;
+	font-size: 25px;
+	line-height: 25px;
+	color: #666;
+}
+h3 {
+}
+p {
+}
+a{	text-decoration:none; font-size:12px; font-family:TrajanPro-Regular;}
+a:link {
+	color: #666;
+}      /* unvisited link */
+a:visited {
+	color:#666;
+}  /* visited link */
+a:hover {
+	color: #000;
+}  /* mouse over link */
+a:active {
+	color:#000;
+}  /* selected link */
+
+p.style1 {
+	font-size:14px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 15px;
+	color: #666;
+	text-align: justify;
+	font-family: "Open Sans", sans-serif;
+}
+p.style2 {
+	font-size:14px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 15px;
+	color: #666;
+	text-align: justify;
+	font-family:TrajanPro-Regular;
+}
+b.style1 {
+	color: #3366CC;
+	font-weight:600;
+}
+.img {
+}
+b {
+}
+.offices img{
+	margin-top: 0;
+	margin-right: 20px;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+.spread ul li{
+	color: #666;
+	padding-left: 30px;
+	font-size: 20px;
+	line-height: 20px;
+	font-family: TrajanPro-Regular;
+	margin-top: 30px;
+}
+
+
+
+/*Top Stufff********************************************************/
+body {
+	padding: 0;
+	text-align:left;
+	margin: 0 auto;
+	background-position: center top;
+	background-image:url(../images/bg.png);
+	background-repeat:repeat-x;
+	font-size:14px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #CCC;
+}
+#wrapper {
+	margin:0 auto;
+	position:relative;
+	width:990px;
+	
+	
+}
+
+
+
+
+
+/*Header Stuff******************************************************/
+#header {
+	position:relative;
+	background-image:url(../images/header.png);
+	width:990px;
+	height:92px;
+}
+#menu {
+	color:#666;
+	position:absolute;
+	left: 548px;
+	top: 63px;
+	width: 428px;
+	height: 18px;
+}
+#logo {
+	position:absolute;
+	left: 48px;
+	top: 10px;
+	border:none;
+	border-style:none;
+}
+#nav-menu ul {
+	position:absolute;
+	height:116px;
+	width:946px;
+	list-style:none;
+	padding:0;
+	margin:0;
+	top: 10px;
+	left: -49px;
+}
+#nav-menu ul li {
+	display:inline;
+	height:30px;
+	width:300px;
+	list-style:none;
+	margin-left:70px;
+}
+
+
+
+
+/*Index.php*********************************************************/
+#content {
+	position:relative;
+	background-image:url(../images/content.png);
+	width:990px;
+	height:578px;
+}
+#top {
+	position:absolute;
+}
+#mid {
+	position:absolute;
+	left: 48px;
+	top: 368px;
+	width: 857px;
+	height: 73px;
+}
+#bottom {
+	position:absolute;
+}
+#home-content{
+	position:absolute;
+	width: 853px;
+	left: 50px;
+	top: 452px;
+	height: 138px;
+}
+#bar{
+	position:absolute;
+	top: 0px;
+	left: 2px;
+}
+
+
+
+/*office.php*********************************************************/
+#content-other{
+	background-image:url(../images/content-other.png);
+	position:relative; 
+	width:990px;
+	height:578px;
+}
+#left-sidebar{
+	position:absolute;
+	left: 50px;
+	width: 229px;
+	height: 480px;
+	margin: 0px;
+	padding-right: 0px;
+	top: 50px;
+	border-right-width: thin;
+	border-right-style: solid;
+	border-right-color: #666;
+}
+#right-sidebar{
+	overflow:auto;
+	position:absolute;
+	width:600px;
+	top: 32px;
+	height: 500px;
+	left: 317px;
+}
+#right-sidebar div{
+	margin-right:20px;
+	margin-bottom: 40px;
+}
+#building-1{
+	position:absolute;
+	left: 0px;
+	top: 0px;
+	height: 176px;
+}
+
+
+
+/*contact.php********************************************************/
+#content-contacts-1{
+	width:400px;
+	position:absolute;
+	left: 54px;
+	top: 217px;
+}
+#content-contacts-2{
+	width:300px;
+	position:absolute;
+	left: 521px;
+	top: 30px;
+}
+#content-contacts-3{
+	width:460px;
+	position:absolute;
+	left: 53px;
+	top: 405px;
+}
+#content-contacts-4{
+	width:398px;
+	position:absolute;
+	left: 56px;
+	top: 29px;
+	height: 161px;
+}
+#form-wrapper{
+	position:relative;
+	width: 300px;
+	height: 300px;
+}
+
+
+
+
+/*footer.php*********************************************************/
+#footer {
+	position:relative;
+	background-image:url(../images/footer.png);
+	width:990px;
+	height:43px;
+}
+#copyright-text{
+	position:absolute;
+	left: 51px;
+	top: 23px;
+	color: #666;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+
+
+/*Slider Stuff*******************************************************/
+#slider-wrapper {
+	position:absolute;
+	left: 50px;
+	width: 853px;
+	top: 0px;
+	height: 367px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+#slider ul, #slider li,  #slider2 ul, #slider2 li {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#slider2 {
+	margin-top:1em;
+}
+#slider li, #slider2 li {
+	/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		
+		width:856px;
+	height:315px;
+	overflow:hidden;
+}
+#prevBtn, #nextBtn,  #slider1next, #slider1prev {
+	display:block;
+	width:30px;
+	height:77px;
+	position:absolute;
+	left:-30px;
+	top:71px;
+	z-index:1000;
+}
+#nextBtn, #slider1next {
+	left:856px;
+}
+#prevBtn a, #nextBtn a,  #slider1next a, #slider1prev a {
+	display:block;
+	position:relative;
+	width:30px;
+	height:77px;
+	background:url(../images/btn_prev.gif) no-repeat 0 0;
+}
+#nextBtn a, #slider1next a {
+	background:url(../images/btn_next.gif) no-repeat 0 0;
+}
+/* numeric controls */	
+
+	ol#controls {
+	margin:1em 0;
+	padding:0;
+	height:28px;
+}
+ol#controls li {
+	margin:0 10px 0 0;
+	padding:0;
+	float:left;
+	list-style:none;
+	height:28px;
+	line-height:28px;
+}
+ol#controls li a {
+	float:left;
+	height:28px;
+	line-height:28px;
+	border:1px solid #ccc;
+	background:#DAF3F8;
+	color:#555;
+	padding:0 10px;
+	text-decoration:none;
+}
+ol#controls li.current a {
+	background:#5DC9E1;
+	color:#fff;
+}
+ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus {
+	outline:none;
+}
+/* // Easy Slider */
+
+    /* image replacement */
+        .graphic, #prevBtn, #nextBtn, #slider1prev, #slider1next {
+	margin:0;
+	padding:0;
+	display:block;
+	overflow:hidden;
+	text-indent:-8000px;
+}
+    /* // image replacement */
+
+
+
+
+
+
+
+@-webkit-keyframes supersize {
+  0% { -webkit-transform:scale(.9); }
+  100% { -webkit-transform:scale(1); }
+}
+img {vertical-align:middle;}
+ul {
+  list-style:none;
+  padding:0;
+}
+
+nav {float:left;}
+/*
+nav {
+  position:absolute;
+  width:100%;
+  left:0;
+  top:50%;
+  margin-top:-100px;
+  text-align:center;
+}*/
+
+
+/*
+nav li {
+  display:inline;
+  margin:0 5px;
+}
+*/
+
+
+nav img {
+  border-radius:4px;
+  -moz-border-radius:4px;
+  -webkit-box-shadow:0 1px 0 #fff;
+  -moz-box-shadow:0 1px 0 #fff;
+  box-shadow:0 1px 0 #fff;
+  -webkit-transition:opacity .2s linear;
+  -moz-transition:opacity .2s linear;
+  -o-transition:opacity .2s linear;
+  transition:opacity .2s linear;
+}
+
+nav a:hover img {opacity:.75;}
+nav a:active img {margin-top:1px;}
+
+li[id] {
+	
+  overflow:hidden;
+  position:absolute;
+  width:0;
+  height:0;
+  left:0;
+  top:0;
+  opacity:0;
+  background:rgba(0,0,0,.8);
+  -webkit-transition:opacity 1.2s cubic-bezier(0,0,0,1);
+  -moz-transition:opacity 1.2s cubic-bezier(0,0,0,1);
+  -o-transition:opacity 1.2s cubic-bezier(0,0,0,1);
+  transition:opacity 1.2s cubic-bezier(0,0,0,1);
+  
+}
+li[id] a:before {
+  content:url(../images/close.png);
+  position:absolute;
+  top:-26px;
+  left:-26px;
+  opacity:0;
+}
+li[id] a:hover:before {opacity:1;}
+li[id]:target {
+  width:100%;
+  height:900px;
+  opacity:1;
+}
+li[id]:target a {
+  position:absolute;
+  top:30%;
+  left:50%;
+  margin:-220px 0 0 -380px;
+  border:15px solid #fff;
+  -webkit-box-shadow:0 1px 8px #000;
+  -moz-box-shadow:0 1px 8px #000;
+  box-shadow:0 1px 8px #000;
+  -webkit-animation:supersize .8s cubic-bezier(0,0,0,1);
+}

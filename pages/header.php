@@ -13,11 +13,12 @@
   <link href="/pages/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="/pages/css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="/pages/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/pages/css/animate.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-  <nav class="white pinned" style="z-index: 1;" role="navigation">
+  <nav class="pinned" style="z-index: 1;" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="projects.php" class="brand-logo">Projects</a>
+      <a id="logo-container" href="/index.php" class="brand-logo"></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="/index.php">Home</a></li>
         <?php get_pages(); ?>
@@ -28,7 +29,7 @@
         <?php get_pages(); ?>
 
       </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="#" data-activates="nav-mobile" class="button-collapse white-text"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   <div style="height: 64px;"></div>

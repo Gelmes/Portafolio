@@ -1,0 +1,257 @@
+body{
+	width: 950px;
+	margin:0 auto;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	background-image:url(../images/bg.png);
+	background-repeat:repeat-x;
+	background-color:#ccffff;
+}
+h1{ 
+	font-size: 16px; 
+	color: #006699;
+	font-weight: 600;
+	margin-top:0px;
+}
+h2{
+	font-size:14px;
+	color: #6699cc;
+	border-top-width: medium;
+	border-top-style: groove;
+	border-top-color: #006699;
+}
+h3{
+	font-size:12px;
+	color: #006699;
+	margin-top:0px;
+}
+p{
+	font-size:13px;
+	font-weight:400;
+	margin-top:0px;
+}
+ul{
+	font-size:13px;
+	font-weight:400;
+	margin-top:0px;
+}
+.img{ text-align:center; width: 629px; position: relative; padding-top:100px;}
+a:link {color: #333333;}      /* unvisited link */
+a:visited {color:#666666;}  /* visited link */
+a:hover {color: #000000;}  /* mouse over link */
+a:active {color:#6699cc;}  /* selected link */ 
+p.style1{
+	font-size:9px;
+}
+p.style2{
+	font-size:9px;
+	font-weight:700;
+	line-height:31px;
+}
+b.style1{
+	color: #3366CC;
+	font-weight:600;
+}
+b{
+	color:#6699cc;
+	font-weight:700;
+}
+#wrapper{
+	background-color:;
+	position: relative;
+	width:950px; 
+	height:900px;
+}
+#header{
+	background-image: url(../images/header.png);
+	background-repeat:no-repeat;
+	position: relative;
+	height:152px;
+}
+#header-text{
+	position:absolute;
+	top: 132px;
+	left: 201px;
+	width: 605px;
+	font-size: 18px;
+	color: #676767;
+}
+#header-phone{
+	position:absolute;
+	top: 60px;
+	left: 160px;
+	font-size: 36px;
+	font-weight: bold;
+	color: #676767;
+}
+#header-phone-text{
+	position:absolute;
+	top: 95px;
+	left: 341px;
+	font-size: 24px;
+	color: #676767;
+	width: 136px;
+	}
+#header-tagline{
+	position:absolute;
+	top: 76px;
+	left: 463px;
+	font-size: 20px;
+	color: #676767;
+}
+#seen{
+	position:absolute;
+	top: 0px;
+	left: 24px;
+}
+#free-shipping{
+	position:absolute;
+	left: 698px;
+	top: 536px;
+}
+#content-top{
+	background-image:url(../images/content-top.png);
+	background-repeat:no-repeat;
+	position: relative;
+	height:712px;
+}
+#footer{
+	background-image: url(../images/footer.png);
+	background-repeat:no-repeat;
+	position: relative;
+	height:36px;
+}
+#menu{
+	position: absolute;
+	height: 36px;
+	width: 371px;
+	left: 324px;
+	top: 7px;
+}
+#content-block-1{
+	position:absolute;
+	width: 205px;
+	height:400;
+	left: 23px;
+}
+#content-block-2{
+	position:absolute;
+	width: 205px;
+	height:400;
+	top: 309px;
+	left: 23px;
+}
+#table-1{
+	background-image:url(../images/table-bg.png);
+	position:absolute;
+	width: 456px;
+	height:194px;
+	left: 235px;
+	top: 42px;
+}
+#table-2{
+	background-image:url(../images/table-bg.png);
+	position:absolute;
+	width: 456px;
+	height:194px;
+	left: 236px;
+	top: 477px;
+}
+#table-3{
+	background-image:url(../images/table-bg.png);
+	position:absolute;
+	width: 456px;
+	height:194px;
+	left: 236px;
+	top: 260px;
+}
+#table-title-1{
+	position:absolute;
+	left: 236px;
+	top: 21px;
+	width: 297px;
+}
+#table-title-2{
+	position:absolute;
+	left: 236px;
+	top: 239px;
+	width: 208px;
+}
+#table-title-3{
+	position:absolute;
+	left: 237px;
+	top: 455px;
+	width: 204px;
+}
+#pill-img-1{
+	position:absolute;
+	width:117px;
+	height:142px;
+	left: 4px;
+	top: 17px;
+}
+/* Buy Buttons */
+#buy-button-1{
+	position:absolute;
+	width:61px;
+	height:18px;
+	left: 389px;
+	top: 40px;
+}
+#buy-button-2{
+	position:absolute;
+	width:61px;
+	height:18px;
+	left: 389px;
+	top: 73px;
+}
+#buy-button-3{
+	position:absolute;
+	width:61px;
+	height:18px;
+	left: 389px;
+	top: 105px;
+}
+#buy-button-4{
+	position:absolute;
+	width:61px;
+	height:18px;
+	left: 389px;
+	top: 135px;
+}
+#buy-button-5{
+	position:absolute;
+	width:61px;
+	height:18px;
+	left: 389px;
+	top: 164px;
+}
+/* Collumn Text*/
+#content-collumn-1{
+	position:absolute;
+	height:179px;
+	width:87px;
+	left: 130px;
+	top: 4px;
+}
+#content-collumn-2{
+	position:absolute;
+	height:176px;
+	width:71px;
+	left: 231px;
+	top: 4px;
+}
+#content-collumn-3{
+	position:absolute;
+	height:180px;
+	width:58px;
+	left: 318px;
+	top: 4px;
+}
+.content{
+	position:absolute;
+	height:686px;
+	width:629px;
+	left: 45px;
+	top: 20px;
+}

@@ -1,0 +1,220 @@
+/********************************************************************************************************/
+/*======================================================================================================*
+/********************************************************************************************************
+Theme Name: Wear Ventanta
+Theme URI: http://www.YourPage.com
+Description: Your Descriptoon
+Author: Marco Rubio, Tony Arenas @ PDR Media
+Author URI: http://www.pdrmediaonline.com
+Version: 1.0
+Tags: Your Tags
+
+License:
+License URI:
+
+General comments (optional).
+
+
+******************* Basic Webpage Layout ****************
+*														*
+*			<?php include "header.php"; ?>				*
+*			<div id="content">							*
+*			  <div id="top"></div>						*
+*			  <div id="mid"></div>						*
+*			  <div id="bottom"></div>					*
+*			</div>										*
+*			<?php include "footer.php"; ?>				*
+*														*
+*********************************************************
+
+
+
+
+/********************************************************************************************************/
+/*=============================================Fonts====================================================*/
+/********************************************************************************************************/
+@font-face {
+    font-family: "TCM";
+    src: url('./fonts/TCM_____.TTF');
+}
+
+
+
+
+/********************************************************************************************************/
+/*=============================================Global Styles============================================*/
+/********************************************************************************************************/
+h1 {
+}
+h2 {
+}
+h3 {
+}
+p {
+}
+/* ======== Link Styles ========*/
+a:link {
+	color: #cccccc;
+}      /* unvisited link */
+a:visited {
+	color:#cccccc;
+}  /* visited link */
+a:hover {
+	color: #cccccc;
+}  /* mouse over link */
+a:active {
+	color:#cccccc;
+}  /* selected link */
+p.style-1 {
+	font-size:9px;
+}
+p.style-2 {
+	font-size:9px;
+	font-weight:700;
+	line-height:31px;
+}
+b {
+}
+
+/* ======== Link Styles ========*/
+/*Removes The Outline That Appears
+In Some Browsers When and Image is
+Being Hovered Over***************/
+
+a img {outline : none;}
+img {border : 0;}
+
+
+
+
+
+/************************************************************************************************************/
+/*=============================================Top Stufff===================================================*/
+/************************************************************************************************************/
+body {
+	padding: 0;
+	text-align:left;
+	margin: 0 auto;	
+	background-position: center top;
+	background-image:url(./images/bg.png);
+	font-size:14px;
+	font-family: 'Open Sans', sans-serif;
+	background-repeat:repeat-x;
+ 	background-color:;
+}
+#wrapper {
+	margin:0 auto;
+	position:relative;
+	width:100%;
+	
+}
+
+
+
+
+/**************************************************************************************************************/
+/*=============================================Header Stuff===================================================*/
+/**************************************************************************************************************/
+#header {
+	position:relative;
+	background-image:url(./images/header.png);
+	width:900px;
+	height:88px;
+}
+#menu {
+}
+#logo{
+	position:absolute;
+	left: 7px;
+	top: 8px;
+}
+#phone{
+	font-family:TCM;
+	position:absolute;
+	left: 724px;
+	top: 9px;
+	width: 221px;
+	height: 57px;
+}
+
+/* ======== Styles ========*/
+#nav{
+	position:absolute;
+	left: 3px;
+	top: 64px;
+	width: 894px;
+	height: 45px;
+}
+#nav ul {
+ list-style:none;
+ margin:0;
+ padding:0;
+}
+
+#nav li {
+	font-family:TCM;
+	font-size:18px;
+	float:left;
+	margin:0;
+	padding-bottom:2px;
+	padding-top:2px;
+	padding-left:20px;
+	padding-right:20px;
+	text-align:center;
+	background:#000000;
+	color:#ffffff;
+}
+#nav li a {
+	font-family:TCM;
+	display:block;
+	padding:2px 0px;
+	color:#630;
+	text-decoration:none;
+	border-right:1px solid #FFFFFF;
+}
+
+
+
+
+/***********************************************************************************************************/
+/*=============================================Index.php===================================================*/
+/***********************************************************************************************************/
+#content {
+	position:relative;
+	background-image:url(./images/content.png);
+	width:900px;
+	height:543px;
+}
+#top {
+	position:absolute;
+	left: 49px;
+	top: 0px;
+}
+#mid {
+	position:absolute;
+}
+#bottom {
+	position:absolute;
+}
+
+/* ======== Styles ========*/
+
+
+/************************************************************************************************************/
+/*=============================================footer.php===================================================*/
+/************************************************************************************************************/
+#footer {
+	position:relative;
+	background-image:url(./images/footer.png);
+	width:900px;
+	height:78px;
+}
+#copyright{
+	position:absolute;
+	left: 579px;
+	top: 4px;
+	color: #FFF;
+	width: 422px;
+}
+
+/* ======== Styles ========*/

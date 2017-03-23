@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>gPad Guitars | For your iPad, iPod and iPhone</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<script language="JavaScript1.1">
+<!--
+
+/*
+JavaScript Image slideshow:
+By JavaScript Kit (www.javascriptkit.com)
+Over 200+ free JavaScript here!
+*/
+
+var slideimages=new Array()
+var slidelinks=new Array()
+function slideshowimages(){
+for (i=0;i<slideshowimages.arguments.length;i++){
+slideimages[i]=new Image()
+slideimages[i].src=slideshowimages.arguments[i]
+}
+}
+
+function slideshowlinks(){
+for (i=0;i<slideshowlinks.arguments.length;i++)
+slidelinks[i]=slideshowlinks.arguments[i]
+}
+
+function gotoshow(){
+if (!window.winslide||winslide.closed)
+winslide=window.open(slidelinks[whichlink])
+else
+winslide.location=slidelinks[whichlink]
+winslide.focus()
+}
+
+//-->
+</script>
+</head>
+
+<script type="text/javascript">
+
+$.fn.infiniteCarousel = function () {
+
+    function repeat(str, num) {
+        return new Array( num + 1 ).join( str );
+    }
+  
+    return this.each(function () {
+        var $wrapper = $('> div', this).css('overflow', 'hidden'),
+            $slider = $wrapper.find('> ul'),
+            $items = $slider.find('> li'),
+            $single = $items.filter(':first'),
+            
+            singleWidth = $single.outerWidth(), 
+            visible = Math.ceil($wrapper.innerWidth() / singleWidth), // note: doesn't include padding or border
+            currentPage = 1,
+            pages = Math.ceil($items.length / visible);            
+
+
+        // 1. Pad so that 'visible' number will always be seen, otherwise create empty items
+        if (($items.length % visible) != 0) {
+            $slider.append(repeat('<li class="empty" />', visible - ($items.length % visible)));
+            $items = $slider.find('> li');
+        }
+
+        // 2. Top and tail the list with 'visible' number of items, top has the last section, and tail has the first
+        $items.filter(':first').before($items.slice(- visible).clone().addClass('cloned'));
+        $items.filter(':last').after($items.slice(0, visible).clone().addClass('cloned'));
+        $items = $slider.find('> li'); // reselect
+        
+        // 3. Set the left position to the first 'real' item
+        $wrapper.scrollLeft(singleWidth * visible);
+        
+        // 4. paging function
+        function gotoPage(page) {
+            var dir = page < currentPage ? -1 : 1,
+                n = Math.abs(currentPage - page),
+                left = singleWidth * dir * visible * n;
+            
+            $wrapper.filter(':not(:animated)').animate({
+                scrollLeft : '+=' + left
+            }, 500, function () {
+                if (page == 0) {
+                    $wrapper.scrollLeft(singleWidth * visible * pages);
+                    page = pages;
+                } else if (page > pages) {
+                    $wrapper.scrollLeft(singleWidth * visible);
+                    // reset back to start position
+                    page = 1;
+                } 
+
+                currentPage = page;
+            });                
+            
+            return false;
+        }
+        
+        $wrapper.after('<a class="arrow back">&lt;</a><a class="arrow forward">&gt;</a>');
+        
+        // 5. Bind to the forward and back buttons
+        $('a.back', this).click(function () {
+            return gotoPage(currentPage - 1);                
+        });
+        
+        $('a.forward', this).click(function () {
+            return gotoPage(currentPage + 1);
+        });
+        
+        // create a public interface to move to a specific page
+        $(this).bind('goto', function (event, page) {
+            gotoPage(page);
+        });
+    });  
+};
+
+$(document).ready(function () {
+  $('.infiniteCarousel').infiniteCarousel();
+});
+</script>
+<body>
+
+<div id="contentWrapper"> 
+  <div id="header"> <div id="logo"><a href="index.html"><img src="images/logo.png" alt="gPad Home" width="202" height="103" border="0" /></a></div>
+  	<img src="images/logo.png" alt="gPad Home" width="202" height="103" />
+  	<div id="menu"><a href="products.html">PRODUCTS</a> | ABOUT US | REGISTER | APS | CONTACT US</div>
+  </div>
+    <div id="content1">
+    	<a href="javascript:gotoshow()"><img src="images/slides/white-gpad.png" name="slide" border=0 width=882 height=439></a>
+<script>
+<!--
+
+//configure the paths of the images, plus corresponding target links
+slideshowimages("images/slides/white-gpad.png","images/slides/brown-gpad.png","images/slides/maple-gpad.png","images/slides/black-gpad.png","images/slides/brown-mini-g.png")
+slideshowlinks("#","#","#","#","#")
+
+//configure the speed of the slideshow, in miliseconds
+var slideshowspeed=5000
+
+var whichlink=0
+var whichimage=0
+function slideit(){
+if (!document.images)
+return
+document.images.slide.src=slideimages[whichimage].src
+whichlink=whichimage
+if (whichimage<slideimages.length-1)
+whichimage++
+else
+whichimage=0
+setTimeout("slideit()",slideshowspeed)
+}
+slideit()
+
+//-->
+</script>
+
+    </div>
+    <div id="content2">
+    	<div class="infiniteCarousel">
+      <div class="wrapper">
+        <ul>
+          <li><a href="#" title="Tall Glow"><img src="images/product-thumbs/black-gpad-with-gradient.jpg" alt="Tall Glow" width="100" height="150" /></a></li>
+          <li><a href="#" title="Wet Cab"><img src="images/product-thumbs/ebony-guitar-with-gradient.jpg" height="150" width="100" alt="Wet Cab" /></a></li>
+          <li><a href="#" title="Rockefella"><img src="images/product-thumbs/maple-guitar-walnut-neck-with-gradient.jpg" height="150" width="100" alt="Rockefella" /></a></li>
+          <li><a href="#" title="Chrysler Reflect"><img src="images/product-thumbs/maple-guitar-with-gradient.jpg" height="150" width="100" alt="Chrysler Reflect" /></a></li>
+
+          <li><a href="#" title="Chrysler Up"><img src="images/product-thumbs/red-guitar-with-gradient-1.jpg" height="150" width="100" alt="Chrysler Up" /></a></li>
+          <li><a href="#" title="Time Square Awe"><img src="images/product-thumbs/stainless-steel-gpad-with-gradient.jpg" height="150" width="100" alt="Time Square Awe" /></a></li>
+          <li><a href="#" title="Wonky Buildings"><img src="images/product-thumbs/wenge-mini-g-with-gradient.jpg" height="150" width="100" alt="Wonky Buildings" /></a></li>
+          <li><a href="#" title="Leaves of Fall"><img src="images/product-thumbs/white-guitar-walnut-neck-with-gradient.jpg" height="150" width="100" alt="Leaves of Fall" /></a></li>
+          <li><a href="#" title="Leaves of Fall"><img src="images/product-thumbs/white-guitar-with-gradient-1.jpg" height="150" width="100" alt="Leaves of Fall" /></a></li>
+        </ul>        
+      </div>
+    </div>
+    </div>
+</div>
+
+    </body>
+</html>

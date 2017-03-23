@@ -1,4 +1,4 @@
-  <footer class="page-footer blue">
+  <footer class="page-footer">
 
   <!--
     <div class="container">

@@ -47,7 +47,7 @@ function get_contents_limit($address, $limit){
 **********************************************************************/
 function get_team(){
 
-$folders =  scandir("team");
+	$folders =  scandir("team");
 
 	foreach($folders as $folder){
 		if(!($folder == "." || $folder == "..")){
@@ -79,7 +79,7 @@ function get_projects($address, $divided=1, $counter=0){
 		if(!($folder == "." || $folder == "..") && is_dir($address.'/'.$folder)){
 			if(file_exists($address.'/'.$folder.'/thumb.jpg')){
 				$counter++; //Incremented each time to give each element a unique ID
-				echo '<div class="col s12 m4 filter">';
+				echo '<div class="col s12 m4 filter animated flipInY">';
 				echo '<a href="./content.php?dir=';
 				echo $address.'/'.$folder;
 				echo '">';

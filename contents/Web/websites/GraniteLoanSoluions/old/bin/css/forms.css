@@ -1,0 +1,27 @@
+input[type="text"],input[type=password],textarea{font-family:Arial, Helvetica, sans-serif;color:#7d7d7d;font-size:1em;vertical-align:middle;font-weight:normal;padding:10px 10px;margin:0;background:#fff;border:1px solid #e0e0e0;border-radius:5px;outline:none;width:368px;}
+
+#search input[type="text"]{margin-bottom:20px;}
+
+fieldset{border:none;padding:0;margin:0;}
+/* Contact form */
+#contact-form{position:relative;vertical-align:top;color:#828282;}
+#contact-form .success{position:absolute;bottom:100%;left:0;display:none;width:390px;text-align:right;font-weight:bold;}
+		#contact-form label{padding:0 0 7px;display:block;position:relative;margin:0;}
+			#contact-form .message{padding-bottom:20px}
+			#contact-form textarea{width:528px;height:198px;overflow:auto;resize:vertical;}
+			#contact-form .error,#contact-form .empty{color:#f00;display:none;position:absolute;top:-2px;right:0;font-size:12px;line-height:1.2em;}
+		#contact-form .btns{text-align:right;}
+		#contact-form .btns a{margin-left:21px;}
+		
+/* Newsletter-form */
+#newsletter-form{border-bottom:1px solid #dededa;padding:0 0 29px;margin:0 0 30px;position:relative;}
+#newsletter-form input[type="text"]{background-image:url(../images/mail.jpg);background-repeat:no-repeat;background-position:6px 5px;padding:4px 10px 5px 30px;vertical-align:middle;margin:0 3px 0 0;background-color:#f3f3f1;width:180px;font-style:italic;font-size:11px;border-radius:0;}
+#newsletter-form a{vertical-align:middle;}
+
+#newsletter-alt-form{position:relative;}
+#newsletter-alt-form fieldset{border:none}
+#newsletter-alt-form label,#newsletter-form label{display:inline-block;vertical-align:middle;position:relative;}
+#newsletter-alt-form .success,#newsletter-form .success{position:absolute;bottom:100%;left:0;display:none;font-weight:bold;}
+#newsletter-alt-form input[type=text]{width:215px;margin-right:12px;}
+#newsletter-alt-form .error,#newsletter-alt-form .empty,#newsletter-form .error,#newsletter-form .empty{color:#f00;display:none;position:absolute;top:100%;left:0;font-size:12px;line-height:1.2em;}
+#newsletter-alt-form a{vertical-align:middle;}

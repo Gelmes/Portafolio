@@ -1,0 +1,10 @@
+NOTE: 
+
+You will need to have these following tags for the theme to convert properly: 
+    
+	For all CSS stylesheets use this tag: <?php bloginfo('stylesheet_directory'); ?>
+	For all Javascripts use this tag: <?php bloginfo('template_url'); ?>
+	For all theme images use this tag: <?php bloginfo('stylesheet_directory'); ?>
+	
+    Example: src="<?php bloginfo('stylesheet_directory'); ?>/image.jpg"
+

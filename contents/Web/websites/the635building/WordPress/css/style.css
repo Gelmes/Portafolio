@@ -1,0 +1,271 @@
+/*Fonts*************************************************************/
+@font-face {
+    font-family: "TrajanPro-Regular";
+    src: url('../fonts/TrajanPro-Regular.otf');
+}
+
+
+
+
+
+/*Styles************************************************************/
+h1 {
+}
+h2 {
+}
+h3 {
+}
+p {
+}
+a{	text-decoration:none; font-size:12px; font-family:TrajanPro-Regular;}
+a:link {
+	color: #666;
+}      /* unvisited link */
+a:visited {
+	color:#666;
+}  /* visited link */
+a:hover {
+	color: #000;
+}  /* mouse over link */
+a:active {
+	color:#000;
+}  /* selected link */
+p.style1 {
+	font-size:14px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 15px;
+	color: #666;
+	text-align: justify;
+	font-family: "Open Sans", sans-serif;
+}
+p.style2 {
+	font-size:9px;
+	font-weight:700;
+	line-height:31px;
+}
+b.style1 {
+	color: #3366CC;
+	font-weight:600;
+}
+.img {
+}
+b {
+}
+
+
+
+
+
+/*Top Stufff********************************************************/
+body {
+	padding: 0;
+	text-align:left;
+	margin: 0 auto;
+	background-position: center top;
+	background-image:url(../images/bg.png);
+	background-repeat:repeat-x;
+	font-size:14px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #CCC;
+}
+#wrapper {
+	margin:0 auto;
+	position:relative;
+	width:990px;
+	
+	
+}
+
+
+
+
+
+/*Header Stuff******************************************************/
+#header {
+	position:relative;
+	background-image:url(../images/header.png);
+	width:990px;
+	height:92px;
+}
+#menu {
+	color:#666;
+	position:absolute;
+	left: 342px;
+	top: 62px;
+	width: 592px;
+	height: 18px;
+}
+#logo {
+	position:absolute;
+	left: 48px;
+	top: 10px;
+}
+#nav-menu ul {
+	position:absolute;
+	height:116px;
+	width:946px;
+	list-style:none;
+	padding:0;
+	margin:0;
+	top: 10px;
+	left: -49px;
+}
+#nav-menu ul li {
+	display:inline;
+	height:30px;
+	width:300px;
+	list-style:none;
+	margin-left:70px;
+}
+
+
+
+
+/*Index.php*********************************************************/
+#content {
+	position:relative;
+	background-image:url(../images/content.png);
+	width:990px;
+	height:578px;
+}
+#top {
+	position:absolute;
+}
+#mid {
+	position:absolute;
+	left: 48px;
+	top: 368px;
+	width: 857px;
+	height: 73px;
+}
+#bottom {
+	position:absolute;
+}
+#home-content{
+	position:absolute;
+	width: 853px;
+	left: 50px;
+	top: 452px;
+	height: 138px;
+}
+#bar{
+	position:absolute;
+	top: 0px;
+	left: 2px;
+}
+
+
+
+
+/*footer.php*********************************************************/
+#footer {
+	position:relative;
+	background-image:url(../images/footer.png);
+	width:990px;
+	height:43px;
+}
+#copyright-text{
+	position:absolute;
+	left: 51px;
+	top: 23px;
+	color: #666;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+
+
+/*Slider Stuff*******************************************************/
+#slider-wrapper {
+	position:absolute;
+	left: 50px;
+	width: 853px;
+	top: 0px;
+	height: 367px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+#slider ul, #slider li,  #slider2 ul, #slider2 li {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#slider2 {
+	margin-top:1em;
+}
+#slider li, #slider2 li {
+	/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		
+		width:856px;
+	height:315px;
+	overflow:hidden;
+}
+#prevBtn, #nextBtn,  #slider1next, #slider1prev {
+	display:block;
+	width:30px;
+	height:77px;
+	position:absolute;
+	left:-30px;
+	top:71px;
+	z-index:1000;
+}
+#nextBtn, #slider1next {
+	left:856px;
+}
+#prevBtn a, #nextBtn a,  #slider1next a, #slider1prev a {
+	display:block;
+	position:relative;
+	width:30px;
+	height:77px;
+	background:url(../images/btn_prev.gif) no-repeat 0 0;
+}
+#nextBtn a, #slider1next a {
+	background:url(../images/btn_next.gif) no-repeat 0 0;
+}
+/* numeric controls */	
+
+	ol#controls {
+	margin:1em 0;
+	padding:0;
+	height:28px;
+}
+ol#controls li {
+	margin:0 10px 0 0;
+	padding:0;
+	float:left;
+	list-style:none;
+	height:28px;
+	line-height:28px;
+}
+ol#controls li a {
+	float:left;
+	height:28px;
+	line-height:28px;
+	border:1px solid #ccc;
+	background:#DAF3F8;
+	color:#555;
+	padding:0 10px;
+	text-decoration:none;
+}
+ol#controls li.current a {
+	background:#5DC9E1;
+	color:#fff;
+}
+ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus {
+	outline:none;
+}
+/* // Easy Slider */
+
+    /* image replacement */
+        .graphic, #prevBtn, #nextBtn, #slider1prev, #slider1next {
+	margin:0;
+	padding:0;
+	display:block;
+	overflow:hidden;
+	text-indent:-8000px;
+}
+    /* // image replacement */

@@ -1,0 +1,2 @@
+[Thu Apr 12 19:07:50 2012] html-cart.cgi: "my" variable $shipping_total masks earlier declaration in same scope at html-cart.cgi line 296.
+[Thu Apr 12 19:07:50 2012] html-cart.cgi: Name "main::sales_tax" used only once: possible typo at html-cart.cgi line 1220.

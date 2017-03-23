@@ -1,0 +1,70 @@
+.order_error {
+   font-size: 9px;
+   color: #FF0000;
+}
+
+.header_cell {
+   background: #004164;
+   color: #FFFFFF;
+   font-weight: bold;
+   }
+
+.label_cell {
+   font-weight: bold;
+   font-size: 12px
+}
+
+.value_cell {
+   font-size: 12px;
+}
+.delete_link {
+	background:url(http://www.worldwide-usa.com/images/icons/close.jpg);
+}
+
+form {margin-bottom: 0px;}
+
+body {
+	
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	margin:0px;
+	background-image:url(./images/bg.png);
+	background-repeat:repeat-x;
+	background-color:#ccffff;
+   }
+#wrapper{
+	position: relative;
+	left : 50%;
+	margin-left: -225px;
+	border-style:double;
+	border-width:2px;
+	height:auto;
+   
+   }
+#content-top{
+	position: relative;
+	height:auto;
+}
+p {
+   font-size:   12px;
+   }
+
+
+.navlinks A:hover {
+   color: #DF0000;
+   text-decoration: none;
+   }
+
+.search {
+	position: absolute;
+	top: 60px;
+	right: 170px;
+   }
+
+
+.DATA {
+	width:700px;
+	 min-height: 550px;
+    height: auto !important;
+    height: 550px;
+	}

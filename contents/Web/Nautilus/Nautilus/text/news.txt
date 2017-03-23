@@ -1,0 +1,8 @@
+<img src='images/Sub1.JPG' width='200px;' align='left'/>6/21/2014 - With all wiring and connections finalized, water testing has worked perfectly. There are some simple leaks to fix and the more complicated programming is next up for testing. 
+
+<img src='images/testbed.jpg' width='200px;' align='right'/>5/25/2014 - Testing of the Submarine has begun. Soldering and wiring for the test bed is proving to be very successful. 
+
+
+We will be at UCR's Bourns Engineering Day on April 5. Stop by our table to see Nautilus I our submarine from the 2013 RoboSub competition. Meet the 2014 team and check out other projects created by the members.Team 6371 "Gear Gurus" from the First Tech Challenge will also be displaying their robot at our booth. To find out more about the event click the flyer or go to <a href="http://www.engr.ucr.edu/~ssed/">http://www.engr.ucr.edu/~ssed/ </a>
+
+Team Nautilus has started prototyping for the 2014 competition. We have created a test bed for the programmers and the electrical team to work with while the design and build of the new submarine are being created. The prototype has a holonomic drive system and 6 motors. The team has been working on multiple things such as embedded C, serial communication, and diagnostics including interface sensors and data logging among other things.Continue to follow the team on Facebook and check out the website for more updates!
