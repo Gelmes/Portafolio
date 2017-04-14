@@ -19,9 +19,6 @@ For this project I used wax paper and aluminum. I went to the closests dollar st
 
 The circuit I built to test this device was the fallowing
 
-![Image](/projects/Experience/Capacitor/capacitor.jpg)
-
-
 I wrote some arduino code to measure capacitance: 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

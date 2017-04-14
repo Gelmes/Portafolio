@@ -61,8 +61,8 @@ For the puzzle problem to the right it was really interesting to see the differe
 It's clearly visible that the Manhattan distance is the most optimal in this problem, and show to be the most optimal for most cases during the tests.
 ####Test Results
 A total of 5000 tests per algorithm was done with each test incrementing the maximum puzzle solution depth by one from one to ten. The three results that were taken into consideration was the Maximum number of nodes on the queue, the number of nodes expanded, and the average time taken to solve each problem.
-![Image](/contents/CS%20Engr/Puzzle%208/tr1.jpg '100x100')
-![Image](/contents/CS%20Engr/Puzzle%208/tr2.jpg '100x100')
-![Image](/contents/CS%20Engr/Puzzle%208/tr2.jpg '100x100')
+![Image](/contents/CS%20Engr/Puzzle%208/tr1.JPG '100x100')
+![Image](/contents/CS%20Engr/Puzzle%208/tr2.JPG '100x100')
+![Image](/contents/CS%20Engr/Puzzle%208/tr2.JPG '100x100')
 The graphs shown are displayed in a logarithmic scale to show the differences between results better. As you can see from the graphs the UCS algorithm was the slowest. Both the Misplaced tile and the Manhattan distance algorithms did well with the Manhattan distance being faster.
 
