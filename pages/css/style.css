@@ -6,6 +6,10 @@
  * Made By MaterializeCSS.com
  */
 
+a {
+	color: #f00;
+}
+
 nav ul a,
 .side-nav a,
 nav .brand-logo {

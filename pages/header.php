@@ -14,6 +14,29 @@
   <link href="/pages/css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="/pages/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="/pages/css/animate.css" type="text/css" rel="stylesheet"/>
+
+<!-- Hotjar Tracking Code for rubiomarco.com -->
+<script>
+    (function(h,o,t,j,a,r){
+	            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+		            h._hjSettings={hjid:1603920,hjsv:6};
+		            a=o.getElementsByTagName('head')[0];
+			            r=o.createElement('script');r.async=1;
+			            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+				            a.appendChild(r);
+				        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-37855354-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-37855354-4');
+</script>
+
 </head>
 <body>
   <nav class="pinned" style="z-index: 1;" role="navigation">

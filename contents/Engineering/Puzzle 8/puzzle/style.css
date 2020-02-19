@@ -1,0 +1,133 @@
+header{
+	height:40px;
+}
+html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+	overflow:hidden;
+}
+body{
+	overflow:hidden;
+}
+p{
+	line-height: 100%;
+}
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.margin-1{
+	margin:10px;
+}
+.margin-2{
+	margin:20px;
+}
+.gbtn{
+	background:#007777;
+	border-radius:5px;
+	border:#007070 solid 2px;
+}
+.childRect{
+	font-size: 300%;
+}
+
+.selectbtn{
+	padding-left:20px;
+	padding-right:20px;
+}
+.toast{
+	margin-bottom:35px;
+}
+.margin-none{
+	margin:0px;
+}
+.svg{
+	overflow:hidden;
+}
+.link {
+  border: 2px solid #000000;
+  position:absolute;
+}
+.text{
+	font-size: 10px;
+	font-weight: 600;
+
+}
+.costText{
+	font-size: 8px;
+	font-weight: 600;
+
+}
+
+.mainRect {
+	color:#000ffffff000;
+	background:#ffffff;
+	border:teal solid 2px;
+	font-family: "sans-serif";
+	font-weight: 600;
+	position:absolute;
+	border-radius: 5px;;
+}
+.childRect {
+	color:#ffffff;
+	background:#ffffff;
+	border:teal solid 1px;
+	font-family: "sans-serif";
+	font-weight: 600;
+	position:absolute;
+	text-align: center;
+	border-radius: 5px;;
+}
+
+.node {
+	background:#000000;
+	width:20px;
+	height:20px;
+	border-radius:12px;
+	font-size: 10px;
+	font-weight: 600;
+	text-align: center;
+	cursor:pointer;
+	line-height: 18px;
+}
+
+.explored {
+	color: #ffffff;
+}
+
+.winner {
+	background:#008800;
+	color: #ffffff;
+}
+
+.start {
+	background:#dd7700;
+	border:#dd7700 solid 2px;
+	color: #ffffff;
+}
+
+.current {
+	background:#008800;
+	color: #ffffff;
+}
+
+.unexplored {
+	background:#ffffff;
+	border:#000000 solid 2px;
+	/*font-family: "sans-serif";*/
+	color: #000000;
+}
+
+.col{
+	margin-bottom:10px;
+}
+.btn:
+
+.node.a { fill: #1f77b4; }
+.node.b { fill: #ff7f0e; }
+.node.c { fill: #2ca02c; }
